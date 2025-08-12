@@ -8,13 +8,15 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    type: String,
-    default:
-      "https://unsplash.com/photos/gray-fabric-loveseat-near-brown-wooden-table-3wylDrjxH-E",
-    set: (v) =>
-      v === ""
-        ? "https://unsplash.com/photos/gray-fabric-loveseat-near-brown-wooden-table-3wylDrjxH-E"
-        : v,
+    filename: { type: String, required: true },
+    url: {
+      type: String,
+      default: "https://images.unsplash.com/photo-1598300053656-dafc64af98dd",
+      set: (v) =>
+        v === ""
+          ? "https://images.unsplash.com/photo-1598300053656-dafc64af98dd"
+          : v,
+    },
   },
   price: Number,
   location: String,

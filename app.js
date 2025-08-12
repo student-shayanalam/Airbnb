@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const Listing = require("./models/Listing");
+const Listing = require("./models/listing.js");
 
 const MONGO_URL = "mongodb://localhost:27017/wanderlust";
 
