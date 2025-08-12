@@ -1,3 +1,7 @@
+// models/listing.js
+// This file defines the Mongoose schema for a listing in the application.
+// The schema is used to create a model that interacts with the MongoDB database.
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
