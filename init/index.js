@@ -1,3 +1,7 @@
+// init/index.js
+// This file initializes the database with sample data for the application.
+// It connects to the MongoDB database and populates it with predefined listings.
+
 const mongoose = require("mongoose");
 const initdata = require("./data.js");
 const Listing = require("../models/listing.js");
