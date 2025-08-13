@@ -12,7 +12,7 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    filename: { type: String, required: true },
+    filename: { type: String },
     url: {
       type: String,
       default: "https://images.unsplash.com/photo-1598300053656-dafc64af98dd",
