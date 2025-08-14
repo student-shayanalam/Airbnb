@@ -1,0 +1,46 @@
+/* Footer container */
+.f-info {
+  background-color: #ebebeb;
+  height: 8rem;
+  display: flex;
+  flex-direction: column; /* Items top to bottom */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Social icons row */
+.f-info-socials {
+  margin-bottom: 0.5rem;
+}
+
+.f-info-socials i {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  color: #222222;
+  cursor: pointer;
+}
+
+.f-info-socials i:hover {
+  color: #555555;
+}
+
+/* Brand name */
+.f-info-brand {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: #222222;
+}
+
+/* Links row */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
