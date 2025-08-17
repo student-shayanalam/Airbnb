@@ -1,3 +1,7 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
 /* Footer container */
 .f-info {
   background-color: #ebebeb;
@@ -43,4 +47,38 @@
 
 .f-info-links a:hover {
   text-decoration: underline;
+}
+
+/* Cards container */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+ border-radius: 1rem;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effects  */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 0.2;
+  background-color: white;
 }
