@@ -1,8 +1,8 @@
 <!-- views/listings/new.ejs -->
+
 <% layout("layouts/boilerplate") %>
-<div class="row">
-  <div class="col-8 offset-2">
-    <br><br />
+<div class="row mt-4 d-flex justify-content-center">
+  <div class="col-8">
     <h3>Create New Listing</h3>
     <form method="POST" action="/listings">
       <div class="mb-3">
@@ -12,21 +12,32 @@
           placeholder="Add a catchy title"
           type="text"
           class="form-control"
+          id="title"
         />
       </div>
+
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>
-        <textarea name="listing[description]" class="form-control"></textarea>
+        <textarea
+          name="listing[description]"
+          class="form-control"
+          id="description"
+          rows="5"
+          placeholder="Enter description"
+        ></textarea>
       </div>
+
       <div class="mb-3">
-        <label for="image" class="form-label">Image Link</label>
+        <label for="image" class="form-label">Image URL</label>
         <input
           name="listing[image]"
           placeholder="Enter Image URL/Link"
           type="text"
           class="form-control"
+          id="image"
         />
       </div>
+
       <div class="row">
         <div class="mb-3 col-md-4">
           <label for="price" class="form-label">Price</label>
@@ -35,6 +46,7 @@
             placeholder="1200"
             type="number"
             class="form-control"
+            id="price"
           />
         </div>
         <div class="mb-3 col-md-8">
@@ -44,21 +56,24 @@
             placeholder="India"
             type="text"
             class="form-control"
+            id="country"
           />
         </div>
       </div>
+
       <div class="mb-3">
         <label for="location" class="form-label">Location</label>
         <input
           name="listing[location]"
-          placeholder="Korba Chhattisgarh"
+          placeholder="Korba, Chhattisgarh"
           type="text"
           class="form-control"
+          id="location"
         />
       </div>
-      <br />
-      <button class="btn btn-dark add btn"></button>
-      <br><br />
+
+      <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
     </form>
   </div>
 </div>
+
